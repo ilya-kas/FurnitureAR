@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="v1">Bedside table</string>
+    <string name="v2">Bookcase</string>
+    <string name="v3">Desk №1</string>
+    <string name="v4">Desk №2</string>
+    <string name="v5">Sofa</string>
+</resources>

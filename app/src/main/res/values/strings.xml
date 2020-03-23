@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FurnitureAR</string>
+    <string name="what_to_do">Choose an object ot place</string>
 </resources>

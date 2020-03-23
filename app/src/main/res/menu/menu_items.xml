@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/m_btable"
+            android:title="@string/v1" />
+        <item
+            android:id="@+id/m_bookcase"
+            android:title="@string/v2" />
+        <item
+            android:id="@+id/m_desk1"
+            android:title="@string/v3" />
+        <item
+            android:id="@+id/m_desk2"
+            android:icon="@drawable/desk_im"
+            android:title="@string/v4" />
+        <item
+            android:id="@+id/m_sofa"
+            android:title="@string/v5" />
+    </group>
+</menu>
