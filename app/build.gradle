@@ -55,11 +55,11 @@ sceneform.asset('sampledata/desk 2/Desk_01.obj',
         'sampledata/desk 2/Desk_01.sfa',
         'src/main/assets/Desk_01')
 
-
 sceneform.asset('sampledata/bedside_table/bedside_table.obj',
         'default',
         'sampledata/bedside_table/bedside_table.sfa',
         'src/main/assets/bedside_table')
+
 
 sceneform.asset('sampledata/Sofa/sofa.obj',
         'default',
