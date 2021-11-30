@@ -40,28 +40,37 @@ dependencies {
 apply plugin: 'com.google.ar.sceneform.plugin'
 
 
-sceneform.asset('sampledata/Bookcase/Bookcase.obj',
-        'default',
-        'sampledata/Bookcase/Bookcase.sfa',
-        'src/main/assets/Bookcase')
-
 sceneform.asset('sampledata/desk 1/Desk.obj',
         'default',
         'sampledata/desk 1/Desk.sfa',
         'src/main/assets/Desk')
-
-sceneform.asset('sampledata/desk 2/Desk_01.obj',
-        'default',
-        'sampledata/desk 2/Desk_01.sfa',
-        'src/main/assets/Desk_01')
-
-sceneform.asset('sampledata/bedside_table/bedside_table.obj',
-        'default',
-        'sampledata/bedside_table/bedside_table.sfa',
-        'src/main/assets/bedside_table')
 
 
 sceneform.asset('sampledata/Sofa/sofa.obj',
         'default',
         'sampledata/Sofa/sofa.sfa',
         'src/main/assets/sofa')
+
+
+sceneform.asset('sampledata/bedside_table/bedside_table.obj',
+        'sampledata/bedside_table/materials.mtl',
+        'sampledata/bedside_table/bedside_table.sfa',
+        'src/main/assets/bedside_table')
+
+
+sceneform.asset('sampledata/Bookcase/Bookcase.obj',
+        'default',
+        'sampledata/Bookcase/Bookcase.sfa',
+        'src/main/assets/Bookcase')
+
+
+
+sceneform.asset('sampledata/desk 2/Desk_01.obj',
+        'default',
+        'sampledata/desk 2/Desk_01.sfa',
+        'src/main/assets/Desk_01')
+
+sceneform.asset('sampledata/Sofa 2/Sofa_01.obj',
+        'default',
+        'sampledata/Sofa 2/Sofa_01.sfa',
+        'src/main/assets/Sofa_01')

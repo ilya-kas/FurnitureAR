@@ -21,10 +21,11 @@ public class Model {
         fileName = s+".sfb";
     }
 
+    //перезагружает модель
     void resetModelRenderable(MainActivity activity){
         ModelRenderable.builder()
                 .setSource(activity, Uri.parse(fileName)) //что
-                .build()
+                .build() //собираем
                 .thenAccept(renderable -> postRenderable = renderable)//сохраним
                 .exceptionally(throwable -> { Toast toast = //в случае ошибки
                         Toast.makeText(activity, "Unable to load andy renderable", Toast.LENGTH_LONG);
@@ -34,6 +35,7 @@ public class Model {
                 });
     }
 
+    //настраивает размещаемую модель
     void setOnTapListener(ArFragment fragment){
         fragment.setOnTapArPlaneListener(
                 (HitResult hitresult, Plane plane, MotionEvent motionevent) -> {
@@ -41,14 +43,14 @@ public class Model {
                         return;
                     }
 
-                    Anchor anchor = hitresult.createAnchor();
-                    AnchorNode anchorNode = new AnchorNode(anchor);
+                    Anchor anchor = hitresult.createAnchor(); //создаём привязочный якорь
+                    AnchorNode anchorNode = new AnchorNode(anchor); //опорный узел
                     anchorNode.setParent(fragment.getArSceneView().getScene());
 
-                    TransformableNode sofa = new TransformableNode(fragment.getTransformationSystem());
-                    sofa.setParent(anchorNode);
-                    sofa.setRenderable(postRenderable);
-                    sofa.select();
+                    TransformableNode model = new TransformableNode(fragment.getTransformationSystem());//Относительный узел
+                    model.setParent(anchorNode);  //разница в том, что его можно передвигать, вращать и тд
+                    model.setRenderable(postRenderable);
+                    model.select();
                 }
         );
     }
